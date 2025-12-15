@@ -32,7 +32,13 @@
 
         <div class="row mt-3">
             <div class="col">
-                <button type="submit" class="btn btn-success">Save</button>
+                <form method="POST" class="mt-3" action="{{ route('users.destroy', $user) }}">
+                    @csrf
+                    @method('DELETE')
+                    <a type="button" class="btn btn-warning" href="{{ route('users.edit', $user) }}">Edit</a>
+
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
             </div>
         </div>
     </form>
