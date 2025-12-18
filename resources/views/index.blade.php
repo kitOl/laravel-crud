@@ -5,7 +5,7 @@
 
     <a class="btn btn-primary" href="{{ route('users.create') }}" role="button">Create user</a>
 
-    <table class="table">
+    <table class="table table-sm">
         <thead>
             <tr>
                 <th scope="col">#</th>
@@ -38,4 +38,6 @@
 
         </tbody>
     </table>
+
+    {{ $users->links() }}
 @endsection
