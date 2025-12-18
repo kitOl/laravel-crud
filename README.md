@@ -6,7 +6,7 @@
 
 установить composer
 
-git clone [...](https://github.com/kitOl/laravel-crud.git) folder
+git clone [folder](https://github.com/kitOl/laravel-crud.git)
 
 cd folder
 
